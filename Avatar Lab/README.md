@@ -1,4 +1,4 @@
-# 🧑‍🎨 Avatar Builder
+# 🧑‍🎨 Avatar Lab
 
 A SwiftUI avatar builder that lets users create and customize their own little digital self — pick a shape, choose colors, style the hair, eyes, and mouth, and you're done. The result shows up across the app wherever a personal touch is needed.
 
@@ -21,3 +21,10 @@ A SwiftUI avatar builder that lets users create and customize their own little d
 The app follows a simple MVVM-ish pattern. `AvatarModel` holds all the avatar state using nested enums for each customizable feature. `AvatarControls` binds directly to the model so edits are immediately reflected everywhere.
 
 Want to add a new style option? Drop it into the relevant enum in `AvatarModel` and it'll automatically appear in the picker — no extra wiring needed.
+
+## Issues
+
+- Misaligned shapes, possibly due problems in canvas rendering
+TODO: look for canvas alternative
+- SVG export not working
+- inconsisten UI 
